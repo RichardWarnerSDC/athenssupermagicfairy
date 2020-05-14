@@ -1,0 +1,3 @@
+Refer to the Team Athens Project Report for in-depth details about the game.
+
+Currently the project is in the process of being transferred from the University’s private server to an external service provider. As such components including the database are not available making the application unusable. This will be remedied soon. As well as remedying the multiplayer version, a standalone single player version is in the works for instances where connection to the server and LAN is not possible. Future developments include an Android port as required for submission for another programming project.

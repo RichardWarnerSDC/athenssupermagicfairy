@@ -1,0 +1,33 @@
+As we have a non conventional quiz game, hopefully this document will be clear and concise enough to explain it! Super Magic Fairy Fun Quiz (SMFFQ) is a competitive quiz based on the modules in the MSc Computer Science course at Birmingham. Users compete against each other in a first come first serve quiz where the options are limited to only one per player. Each player in a game must race to take the correct answer as quick as possible!
+How does the quiz work?
+Just like a normal quiz- with a twist! Each question has four options- only one of which is correct. When a player selects an option, then they have claimed it and no other player can select this option.
+Scoring System
+Every game consists of 10 questions. After a question has been asked, the server will wait for any of the clients to respond.
+Once the server receives its first response, the server will start a 5 second timer.
+The 5 second timer indicates the time remaining for each of the other players to answer.
+The points will be distributed as follows:
+The player (if any) who answers it correctly-> PLUS 100(k/5) where k is the time remaining on the timer. This means that if they are the FIRST person to answer and they choose the correct answer, they obtain a full 100 points.
+Any players who select incorrect answers-> MINUS 50.
+Any players who do NOT answer-> 0 points.
+An example is where players 1-4 all answer, say player 2 answers correctly, but with 3 seconds left on the timer. Then the players 1, 3 and 4 would have minus 50 points but player 2 obtains 60 points.
+Another example is where players 1 and 2 answer, say player 1 answers correctly, but with 1 second left on the timer. Then the player 2 would have minus 50 points, player 1 obtains 20 points and players 3 and 4 get nothing.
+At the end of a game, players will get the following bonus points, according to position:
+1st = 200
+2nd = 100
+3rd = 50
+4th = 25
+The points that the players end with are added onto their total experience which then translates to their rank (see below).
+If a player ends with negative points, then we only add the bonus points to their rank (i.e. they cannot derank).
+If there are less than 4 players, we work from the top (e.g. out of 2 players, first will get 200 and second will get 100).
+Ranking System
+Each players rank is based on their total experience (or total score):
+Whats a computer? (0-50)
+Ramibless. (51-150)
+What's a database? (151-300)
+Noobie programmer. (301-500)
+Intermediate. (501-1000)
+You're getting good at this (allegedly). (1001-1750)
+Experienced. (1751-3000)
+Someone's getting a distinction... (3000-5000)
+Dat pro masters Lyfe. (5001- 8000)
+The Uday. (8000+)
